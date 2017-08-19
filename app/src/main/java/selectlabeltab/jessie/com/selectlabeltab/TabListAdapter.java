@@ -69,7 +69,7 @@ public class TabListAdapter  extends BaseTabListAdapter{
                         //编辑模式
                         if (isEditMode) {
                             //执行移动到其他分页的逻辑和动画
-                            RecyclerviewAnimator.myToOther(position,(RecyclerView) parent,TabListAdapter.this,myHolder,myItems);
+                            RecyclerviewAnimator.myToOther(position,(RecyclerView) parent,TabListAdapter.this,myHolder,myItems,otherItems);
 
                         } else {
                             //执行点击事件回调

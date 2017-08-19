@@ -26,7 +26,7 @@ public class RecyclerviewAnimator {
     public static Handler delayHandler = new Handler();//延时handler
     private static final long ANIM_TIME = 360L;//动画时间
     //我的分页移动到其他分页
-    public static void myToOther(int position, RecyclerView parent, RecyclerView.Adapter adapter,RecyclerView.ViewHolder myHolder, List myItems){
+    public static void myToOther(int position, RecyclerView parent, RecyclerView.Adapter adapter,RecyclerView.ViewHolder myHolder, List myItems,List otherItems){
         if(position == 1){//过滤第一个
             return;
         }
@@ -55,9 +55,9 @@ public class RecyclerviewAnimator {
             }
             //开始执行动画
             startAnimation(recyclerView, currentView, targetX, targetY);
-            moveMyToOther(adapter,myHolder,myItems);
+            moveMyToOther(adapter,myHolder,myItems,otherItems);
         } else {
-            moveMyToOther(adapter,myHolder,myItems);
+            moveMyToOther(adapter,myHolder,myItems,otherItems);
         }
     }
 
@@ -184,7 +184,7 @@ public class RecyclerviewAnimator {
 
 
     //我的分页移动到其他分页
-    public static void moveMyToOther(RecyclerView.Adapter adapter, RecyclerView.ViewHolder myHolder, List myItems) {
+    public static void moveMyToOther(RecyclerView.Adapter adapter, RecyclerView.ViewHolder myHolder, List myItems ,List otherItems) {
         //当前操作的位置
         int position = myHolder.getAdapterPosition();
         //对应数据集中的位置
@@ -200,7 +200,7 @@ public class RecyclerviewAnimator {
         //移除数据集中对应的数据
         myItems.remove(startPosition);
         //添加到第一个的位置
-        myItems.add(0, item);
+        otherItems.add(0, item);
         //刷新该位置item
         adapter.notifyItemMoved(position, myItems.size() + BaseTabListAdapter.COUNT_PRE_OTHER_HEADER);
     }

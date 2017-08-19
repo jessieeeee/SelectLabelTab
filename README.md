@@ -1,5 +1,5 @@
 # SelectLabelTab
-- ![image](http://oqujmbgen.bkt.clouddn.com/%E5%91%A8%E6%97%A5%E5%8E%86%E4%B8%8E%E6%9C%88%E6%97%A5%E5%8E%86%E7%9A%84%E8%81%94%E5%8A%A8%E5%AE%9E%E7%8E%B0.gif)
+- ![image](http://oqujmbgen.bkt.clouddn.com/%E8%B0%83%E6%95%B4tab%E7%9A%84%E5%88%86%E7%BB%84%E5%92%8C%E9%A1%BA%E5%BA%8F%E4%BB%BF%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1.gif)
 ## support 
 ### realise adjustable tab manage page for android
 仿今日头条，实现tab栏管理界面，可调整tab的分组和顺序
@@ -18,7 +18,7 @@ Add it in your root build.gradle at the end of repositories:
 ### Step 2. Add the dependency
 <pre>
 dependencies {
-       compile 'com.github.jessieeeee:JourneyCalendar:v1.0.1'
+        compile 'com.github.jessieeeee:SelectLabelTab:v1.0'
 	}
 </pre>
 
