@@ -1,5 +1,5 @@
 # SelectLabelTab
-- ![image](http://oqujmbgen.bkt.clouddn.com/%E8%B0%83%E6%95%B4tab%E7%9A%84%E5%88%86%E7%BB%84%E5%92%8C%E9%A1%BA%E5%BA%8F%E4%BB%BF%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1.gif)
+- ![image](http://oqujmbgen.bkt.clouddn.com/SelectLabelTab.gif)
 ## support 
 ### realise adjustable tab manage page for android
 仿今日头条，实现tab栏管理界面，可调整tab的分组和顺序
