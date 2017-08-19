@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SelectLabelTab</string>
+    <string name="my_tabs">我的分页</string>
+    <string name="tip_drag">长按编辑,拖拽排序</string>
+    <string name="edit">编辑</string>
+    <string name="finish">完成</string>
+    <string name="other_channel">其他分页</string>
+</resources>

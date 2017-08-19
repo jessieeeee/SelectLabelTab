@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#9c9c9c</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#ef4836</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_focus">#DDDDDD</color>
+    <color name="indicator_yellow">#e3d6c1</color>
+    <color name="select_red_line">#8f1d22</color>
+    <color name="indicator_select_black">#101010</color>
+    <color name="indicator_normal_black">#666666</color>
+</resources>
