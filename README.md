@@ -19,7 +19,7 @@ Add it in your root build.gradle at the end of repositories:
 <pre>
 dependencies {
  compile 'com.github.jessieeeee:SelectLabelTab:v1.0.1'
-	}
+}
 </pre>
 
 ## How to Use
