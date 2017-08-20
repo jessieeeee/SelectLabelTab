@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             otherItems.add(entity);
         }
         tabLayout.setupWithViewPager(viewPager);
-        setTabTitle();
+        setTabTitle(true);
         viewPager.setAdapter(mExamplePagerAdapter);
         icon_category.setVisibility(View.VISIBLE);
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -84,12 +84,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void setTabTitle() {
+    private void setTabTitle(boolean addTab) {
         mDataList.clear();
         Iterator<MainTitleDTO> it = items.iterator();
         while (it.hasNext()) {
             MainTitleDTO mainTitleDTO = it.next();
             mDataList.add(mainTitleDTO.getTitle());
+            if(addTab)
             tabLayout.addTab(tabLayout.newTab().setText(mainTitleDTO.getTitle()));
         }
     }
@@ -127,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                         ArrayList otherChannels = (ArrayList) data.getSerializableExtra(OTHER_CHANNEL);
                         otherItems.addAll(otherChannels);
                     }
-                    setTabTitle();
+                    setTabTitle(false);
                     mExamplePagerAdapter.notifyDataSetChanged();
                 }
                 if (data.hasExtra(GOTO_FRAGMENT)) {
