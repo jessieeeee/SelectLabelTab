@@ -90,8 +90,9 @@ public class MainActivity extends AppCompatActivity {
         while (it.hasNext()) {
             MainTitleDTO mainTitleDTO = it.next();
             mDataList.add(mainTitleDTO.getTitle());
-            if(addTab)
-            tabLayout.addTab(tabLayout.newTab().setText(mainTitleDTO.getTitle()));
+            if(addTab){
+                tabLayout.addTab(tabLayout.newTab().setText(mainTitleDTO.getTitle()));
+            }
         }
     }
 
